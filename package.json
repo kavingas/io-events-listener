@@ -1,0 +1,30 @@
+{
+  "name": "eventing-demo",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "dependencies": {
+    "@adobe/aio-lib-events": "^1.1.5",
+    "dotenv": "^10.0.0",
+    "got": "^11.8.2",
+    "pino": "^6.13.2",
+    "pino-pretty": "^7.6.1",
+    "prettier": "^2.6.2"
+  },
+  "devDependencies": {
+    "@tsconfig/node14": "^1.0.1",
+    "@types/node": "^16.11.27",
+    "@types/pino": "^6.3.11",
+    "@typescript-eslint/eslint-plugin": "^4.21.0",
+    "@typescript-eslint/parser": "^4.33.0",
+    "eslint": "^7.22.0",
+    "jest-fetch-mock": "^3.0.3",
+    "ts-jest": "^27.1.4",
+    "ts-node-dev": "^1.1.8",
+    "typescript": "^4.6.3"
+  },
+  "scripts": {
+    "build": "tsc",
+    "watch": "NODE_ENV=dev tsnd -r dotenv/config server.ts"
+  }
+}
